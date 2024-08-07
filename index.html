@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Language" content="en-za" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/styling.css">
+<title>Nusaibah Charif</title>
+<link rel="icon" type="image/x-icon" href="graphics/Logo.png">
+</head>
+
+<body>
+<div id="page">
+	<div id="sidebar">
+		<img src="graphics/swegga.jpg" id="sb" alt="sidebar">
+		</div>
+		
+		<div id="banner">
+ <img src="graphics/delivery.gif" id="d" alt="delivery.gif"> 
+		
+</div>
+	<div id="navigation">
+		<img src="graphics/links.gif" id="l" alt="navbar" usemap="#navbar" >
+		<map name="navbar">
+			<area shape="rect" coords="10,5 95,35" alt="Home" href="order.html">
+			<area  shape="rect" 105,5 190,35" alt="Services" href="pages/services.html">
+			<area shape="rect" coords="205,5 300,35" alt="Products" href="pages/products.html">
+			<area shape="rect" coords="310,5 440,35"  alt="Order" href="pages/orderStatus.html" >
+			<area shape="rect" coords=" 450,5 555,35 " alt="Contact Us"  href="pages/contactUs.html" >
+	
+		  </map> 
+
+	
+	</div>
+	<div id="main">
+		<form class="orders">
+			<table>
+				<caption>Product Summary:</caption>
+				<tr>
+			<th>Description</th>
+			<th>Size</th>	
+			<th>Color</th>	
+			<th>Price</th>	
+			<th>Quantity</th>	
+			<th>Total</th>
+				
+			</tr>
+			<tr>
+			<td><a href="female.html">Female Ski Jackets</a></td>
+			<td>
+				<select>
+					<option value="Small">Small</option>
+					<option value="Medium">Medium</option>
+					<option value="Large">Large</option>
+				</select>	
+			</td>
+			<td>
+				<select>
+					<option value="Red">Red</option>
+					<option value="Pink">Pink</option>
+					<option value="Black">Black</option>
+				</select>
+			</td>
+			<td>150.95</td>
+			<td><input type="number" id="femaleQuantity" min="1"></td>
+			<td id="femaleTotal"></td>
+			
+			</tr>
+			<tr>
+				<td><a href="male.html">Male Ski Jackets</a></td>
+			
+				<td><select>
+					<option value="Small">Small</option>
+					<option value="Medium">Medium</option>
+					<option value="Large">Large</option>
+				</select></td>
+				<td><select>
+					<option value="Red">Red</option>
+					<option value="Blue">Blue</option>
+					<option value="White">White</option>
+				</select>	</td>
+				<td>180.95</td>
+				<td><input type="number" id="maleQuantity" min="1" value="save"></td>
+			
+				<td id="maleTotal"></td>
+				 
+			</tr>
+			<tr>
+			<td colspan="4">Click to confirm and process your order</td>
+			<td><button type="button" onclick="calculateTotal()" >Total Price</button></td>
+			<td id="totalPrice"></td>
+			</tr>
+			
+			</table>
+			
+			
+			
+			
+			</form>
+	
+<div id="footer">
+<p>&copy;2024 Swegga Fashion- Nusaibah Charif</p>
+</div>
+
+	</div>
+	
+</div>
+<script src="script/code.js"></script>
+</body>
+</html>
